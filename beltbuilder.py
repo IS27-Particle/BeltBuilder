@@ -28,9 +28,9 @@ class template(object):
         self._genmod(xmod, ymod)
         xmod = 0
         ymod = 0
-        for i in range(len(self.layout), x, 1):
+        while len(test) <= x:
             test.append([])
-        for i in range(len(self.layout[x]), y, 1):
+        while len(test[x]) <= y:
             test[x].append(0)
 
         if test[x][y] == 0:
